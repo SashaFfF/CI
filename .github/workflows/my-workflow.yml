@@ -12,15 +12,15 @@ jobs:
       - name: Build project
         run:  gradle clean build
 
-#  checkstyle:
-#    runs-on: ubuntu-latest
-#    needs: build
-#    steps:
-#      - name: Checkout repository
-#        uses: actions/checkout@v3
-#      - name: Run Checkstyle
-#        uses: nikitasavinov/checkstyle-action@master
-#
+  checkstyle:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Run Checkstyle
+        uses: nikitasavinov/checkstyle-action@master
+
 #  coverage:
 #    runs-on: ubuntu-latest
 #    needs: build
