@@ -21,7 +21,7 @@ jobs:
       - name: Run Checkstyle
         uses: nikitasavinov/checkstyle-action@master
         with:
-          config_path: "config/checkstyle/checkstyle.xml"
+          checkstyle_config: "config/checkstyle/checkstyle.xml"
 
   coverage:
     runs-on: ubuntu-latest
