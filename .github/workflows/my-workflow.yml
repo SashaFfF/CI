@@ -33,7 +33,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Run jacoco report
-        run:  gradle jacocoTestReport
+        run:  ./gradle jacocoTestReport
       - name: Upload jacoco report
         id: jacoco
         uses: madrapps/jacoco-report@v1.6.1
